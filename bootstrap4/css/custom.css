@@ -1,0 +1,392 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+span.active {
+	color: #9CC215;
+}
+
+@media (max-width: 576px) {
+	/* 80px and its content aligned to centre. Pushing it off the screen with the
+       negative left margin
+    */
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: 0px !important;
+    }
+
+    /* Reappearing the sidebar on toggle button click */
+    #sidebar {
+        margin-left: 0;
+    }
+
+    /* Toggling the sidebar header content, 
+       hide the big heading [h3] and showing the small heading [strong] and vice versa
+    */
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    /* Downsize the navigation links font size */
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    /* Adjust the dropdown links padding*/
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+    /* Changing the arrow position to bottom center position, 
+      translateX(50%) works with right: 50% 
+      to accurately  center the arrow */
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+	}
+}
+
+img#logo-image {
+	background-color: #FFFFFF;
+	max-width: 200px;
+	max-height: 50px;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #ADADAD;
+}
+
+a, a:hover, a:focus{
+	color: inherit;
+	text-decoration: none;
+}
+
+a .button {
+	text-decoration: none;
+}
+
+.button {
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #898989;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #CED4DA !important;;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 16px;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.button-large {
+	height: 50px;
+	line-height: 50px;
+	padding: auto;
+	vertical-align: middle;
+}
+
+.button-fill {
+	width: 100%;
+}
+
+.button-green-1 {
+	background-color: #9CC215 !important;
+	color: #ffffff;
+
+}
+
+.button-green-2 {
+	background-color: #29AD61 !important;
+	border: 2px solid #23B061;
+	color: #ffffff;
+}
+
+/* Login Page */
+.login-container {
+    background-color: #eeeeee;
+}
+
+#login-card {
+	margin-top: 12vh;
+	background-color: #FFFFFF;
+}
+
+.hero-login-image {
+	background-image: url('../../13 lores ijo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #ffffff;
+}
+
+.hero-text-top {
+	margin-top: 3%;
+}
+
+.hero-text-top h1{
+	font-weight: bolder;
+	font-size: 5rem;
+}
+
+.hero-text-top p {
+	margin: -2.5rem 4rem 0rem 0rem;
+	font-size: 3rem;
+	color: #FFFFFF;
+}
+
+.hero-text-bottom {
+	display: grid;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	top: 50%;
+}
+
+.hero-text-bottom p {
+	color: #FFFFFF;
+}
+
+.hero-text-bottom a {
+	color: #ffffff;
+	margin-top: -3%;
+	text-decoration: underline;
+}
+
+.hero-text-bottom a:hover {
+	color: #ffffff;
+}
+
+#login-logo p {
+	margin-top: -1rem;
+	padding-left: 55%;
+}
+
+.navbar {
+	padding: 5px 0;
+	background-color: #FFFFFF !important;
+	border: none;
+	border-radius: 0;
+	margin: 0 0 20px -10px !important;
+	width: 100%;
+}
+
+.navbar li.navbar-item {
+	color: #ADADAD;
+    background: #FFFFFF;
+}
+
+.navbar .container-fluid,
+.navbar .container-fluid ul.navbar-nav,
+.navbar .container-fluid ul li.navbar-item a i {
+	background-color: #FFFFFF !important;
+}
+
+.navbar .container-fluid ul li.navbar-item:hover {
+	color: #9CC215 !important;
+}
+
+.navbar-item a i {
+	font-size: 1em;
+	margin: 0 5px;
+	padding: 0;
+}
+
+
+/*Navbar Settings*/
+.wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+	background-color: #F5F6F8;
+}
+
+#sidebar {
+	min-width: 225px;
+	max-width: 225px;
+	background-color: #ffffff !important;
+	color: #ADADAD;
+	transition: all 0.7s;
+}
+
+button#sidebar-collapse i {
+	color: #9CC215;
+}
+
+button#sidebar-collapse:active {
+	box-shadow: unset;
+}
+
+#sidebar.active {
+	min-width: 100px;
+	max-width: 100px;
+	text-align: center;
+	margin-left: -1.5rem;
+}
+
+#sidebar .sidebar-header {
+	background: #FFFFFF;
+}
+
+#sidebar .sidebar-header strong{
+	display: none;
+}
+
+#sidebar.active .sidebar-header h3 {
+	display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+	display: block;
+}
+
+#sidebar ul.components {
+	padding: 20px 0;
+	background-color: #FFFFFF;
+	margin-left: 1rem;
+}
+
+li.subcomponents {
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+}
+
+#sidebar.active ul ul a {
+	padding: 0 10px !important;
+}
+
+#sidebar ul li {
+	background-color: #FFFFFF;
+}
+
+#sidebar ul p {
+	color: #ADADAD;
+	padding: 10px;
+}
+
+#sidebar ul li a {
+	padding: 10px;
+	font-size: 1em;
+	display: block;
+}
+
+#sidebar.active ul li a {
+	padding: 20px 10px;
+	text-align: center;
+	font-size: 0.85em;
+}
+
+#sidebar ul li a:hover {
+	color: #9CC215;
+	background-color: #FFFFFF;
+}
+
+#sidebar ul li a i {
+	margin-right: 1em;
+	background-color: #FFFFFF;
+}
+
+#sidebar.active ul li a i {
+	margin-right: 0;
+	display: block;
+	font-size: 1.8em;
+	margin-bottom: 5px;
+}
+
+#sidebar ul li.active>a {
+	color: #9CC215;
+	background-color: #FFFFFF;
+}
+
+.sidebar .divider hr {
+	color: #ADADAD;
+}
+
+a[data-toggle="collapse"] {
+	position: relative;
+}
+
+.dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+#sidebar ul ul a {
+	font-size: 0.9em !important;
+	padding-left: 30px !important;
+	background-color: #FFFFFF;
+}
+
+#sidebar hr.sidebar-divider {
+	border-top: 1px solid #C7C7C7;
+	margin-left: -1em;
+}
+
+li#user-info {
+	display: inline-block;
+	padding: 0 25px;
+	height: 25px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+li#user-info img {
+	float: left;
+	margin: 0 10px 0 -25px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+#content-fill {
+	width: 95%;
+	text-align: justify;
+	margin-left: 1em;
+	min-height: 100vh;
+	transition: all 1s;
+	color: #828282;
+}
+
+.default-breadcrumb {
+	background-color: unset !important;
+}
+
+.default-card {
+	background-color: #FFFFFF;
+	border: unset;
+	border-radius: 0%;
+}
+
+.default-card .default-card-text {
+	margin: 2em 0;
+}

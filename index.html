@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap4/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="bootstrap4/css/custom.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="shadow">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="" class="img-fluid" id="logo-image">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li id="user-info">
+                    <img src="LOGO TOKO MANAMANA-02 100X100.png" alt="" class="img-fluid">
+                    email@gmail.com
+                    nama
+                </li>
+
+                <div class="divider"></div>
+                
+                <li class="active">
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-boxes"></i>Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#submenuKatalog" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-dumbbell"></i>Katalog
+                    </a>
+
+                    <ul class="collapse list-unstyled" id="submenuKatalog">
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Produk</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Merek</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Variasi</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Fitur</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Ulasan</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="far fa-envelope"></i>Pesanan
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="far fa-star"></i>/Reward
+                    </a>
+                </li>
+                <li>
+                    <a href="#submenuDesain" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-brush"></i>/Desain
+                    </a>
+
+                    <ul class="collapse list-unstyled" id="submenuDesain">
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Halaman</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Banner</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="javascript:void(0)">Merek</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-bullhorn"></i>Marketing
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="far fa-map"></i>/Merchant
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="far fa-window-maximize"></i>/Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-chart-bar"></i>Laporan
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-landmark"></i>Gudang
+                    </a>
+                </li>
+
+                <hr class="sidebar-divider my-3">
+
+                <li>
+                    <a href="#submenusetting" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>Pengaturan
+                    </a>
+                    
+                    <ul class="collapse list-unstyled" id="submenusetting">
+                        <li class="subcomponents">
+                            <a href="">SEO Url</a>
+                        </li>
+                        <li class="subcomponents">
+                            <a href="">Pengaturan 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+
+                    <button id="sidebar-collapse" class="btn ml-3">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <ul class="navbar-nav ml-auto d-none d-sm-flex">
+                        <li class="navbar-item">
+                            <a href="">
+                                <i class="far fa-bell"></i>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">
+                                <i class="fas fa-coins"></i>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">
+                                <i class="fas fa-store-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            
+            <div class="container-fluid" id="content-fill">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb default-breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-12">                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card default-card">
+                                    <div class="card-body">
+                                        <div class="default-card-text">
+                                            <h4>Penjualan Bulan <span class="active">April</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                    </div>
+                    <div class="col-md-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla, facere rerum aliquam doloremque aspernatur quisquam consectetur sunt debitis non dolores accusamus alias delectus numquam maiores minus ducimus quod porro?
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="bootstrap4/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap4/js/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <script src="bootstrap4/js/custom.js"></script>
+</body>
+</html>
